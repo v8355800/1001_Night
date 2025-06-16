@@ -1,0 +1,270 @@
+{
+  "name": "Выходное напряжение",
+  "units": "В",
+  "short": "Uвых1",
+  "type_test":[5, 5],  
+  "diag": true,
+  "ic": "^1395ЕН(0[1-9]|10)[АБВГДЕЖИК]$",
+  "norms": [
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)А$",
+      "mzu": [1.232, 1.425],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)Б$",
+      "mzu": [1.479, 1.71],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)В$",
+      "mzu": [1.775, 2.052],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)Г$",
+      "mzu": [2.465, 2.85],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)Д$",
+      "mzu": [2.958, 3.42],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)Е$",
+      "mzu": [3.253, 3.762],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)Ж$",
+      "mzu": [4.929, 5.7],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)И$",
+      "mzu": [8.873, 10.26],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395ЕН(0[1-9]|10)К$",
+      "mzu": [11.831, 13.68],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }    
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1395ЕН0[12][АБВГДЕЖ]$",
+      "IN": [7, "В"],
+      "OUT": [-100, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[12][И]$",
+      "IN": [12, "В"],
+      "OUT": [-100, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[12][К]$",
+      "IN": [14, "В"],
+      "OUT": [-100, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+
+    {
+      "mode_ic": "^1395ЕН0[34][АБВГДЕЖ]$",
+      "IN": [7, "В"],
+      "OUT": [-300, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[34][И]$",
+      "IN": [12, "В"],
+      "OUT": [-300, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[34][К]$",
+      "IN": [14, "В"],
+      "OUT": [-300, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+
+    {
+      "mode_ic": "^1395ЕН0[56][АБВГДЕЖ]$",
+      "IN": [7, "В"],
+      "OUT": [-500, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[56][И]$",
+      "IN": [12, "В"],
+      "OUT": [-500, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[56][К]$",
+      "IN": [14, "В"],
+      "OUT": [-500, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+
+    {
+      "mode_ic": "^1395ЕН(0[7-9]|10)[АБВГДЕЖ]$",
+      "IN": [7, "В"],
+      "OUT": [-1, "А"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН(0[7-9]|10)[И]$",
+      "IN": [12, "В"],
+      "OUT": [-1, "А"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН(0[7-9]|10)[К]$",
+      "IN": [14, "В"],
+      "OUT": [-1, "А"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }     
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "name": "Оценка входного напряжения низкого уровня на выводе EN",
+  "units": "",
+  "short": "U0 (Uвх_н_EN)",
+  "type_test":[8, 8],
+  "diag": false,
+  "ic": "^1395(?:ЕР0[13579]|ЕН(?:0[2468]|10).)$",
+  "norms": [
+    {
+      "norm_ic": "^1395(?:ЕР0[13579]|ЕН(?:0[2468]|10).)$",
+      "mzu": ["1", "1"],
+      "ceh": {
+        "-60" : ["1", "1"],
+        "+25" : ["1", "1"],
+        "+125": ["1", "1"]
+      },
+      "kontr": {
+        "-60" : ["1", "1"],
+        "+25" : ["1", "1"],
+        "+125": ["1", "1"]
+      },
+      "sdat": {
+        "-60" : ["1", "1"],
+        "+25" : ["1", "1"],
+        "+125": ["1", "1"]
+      }
+    }    
+  ],
+   "loadCurrent":
+  [
+    {
+      "mode_ic": "^1395Е[РН]0[12][АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[2, "мА"]
+    },
+    {
+      "mode_ic": "^1395Е[РН]0[34][АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[3, "мА"]
+    },
+    {
+      "mode_ic": "^1395Е[РН]0[56][АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[5, "мА"]
+    },
+    {
+      "mode_ic": "^1395Е[РН](?:0[7-9]|10)[АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[10, "мА"]
+    }
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "mzu",
+      "mode_temp"    : "\\+25",
+      "IN"      : [15, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.52, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "ceh",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.45, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "ceh",
+      "mode_temp"    : "\\+25",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.51, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "kontr",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.425, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "kontr",
+      "mode_temp"    : "\\+25",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.505, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "sdat",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.4, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_norm"    : "sdat",
+      "mode_temp"    : "\\+25",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.5, "В"]
+    },  
+
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "mzu",
+      "mode_temp"    : "\\+25",
+      "IN"      : [25, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.52, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "ceh",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.45, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "ceh",
+      "mode_temp"    : "\\+25",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.51, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "kontr",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.425, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "kontr",
+      "mode_temp"    : "\\+25",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.505, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "sdat",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.4, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_norm"    : "sdat",
+      "mode_temp"    : "\\+25",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [0.5, "В"]
+    }
+
+  ]
+} 

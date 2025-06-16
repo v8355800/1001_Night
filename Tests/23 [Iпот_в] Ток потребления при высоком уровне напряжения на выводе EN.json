@@ -1,0 +1,127 @@
+{
+  "name": "Ток потребления при высоком уровне напряжения на выводе EN",
+  "units": "мкА",
+  "short": "Iпот_в",
+  "type_test":[122, 122],
+  "diag": false,
+  "ic": "^1395(?:ЕР0[13579]|ЕН(?:0[123456789]|10).)$",
+  "norms": [
+    {
+      "norm_ic": "^1395ЕН0[13579].$",
+      "mzu": [null, 7.3],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1395(?:ЕР0[13579]|ЕН(?:0[2468]|10).)$",
+      "mzu": [null, null],
+      "ceh": {
+        "-60" : [null, 12.1],
+        "+25" : [null, 8.1],
+        "+125": [null, 12.1]
+      },
+      "kontr": {
+        "-60" : [null, 13.5],
+        "+25" : [null, 9.0],
+        "+125": [null, 13.5]
+      },
+      "sdat": {
+        "-60" : [null, 15],
+        "+25" : [null, 10],
+        "+125": [null, 15]
+      }
+    }    
+  ],
+
+  "loadCurrent":
+  [
+    {
+      "mode_ic": "^1395Е[РН]0[12][АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[2, "мА"]
+    },
+    {
+      "mode_ic": "^1395Е[РН]0[34][АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[3, "мА"]
+    },
+    {
+      "mode_ic": "^1395Е[РН]0[56][АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[5, "мА"]
+    },
+    {
+      "mode_ic": "^1395Е[РН](?:0[7-9]|10)[АБВГДЕЖИК]?$",
+      "mode_norm"    : "mzu|ceh|sdat|kontr",
+      "fLoadCurrent":[10, "мА"]
+    }
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^1395ЕН0[13].$",
+      "mode_norm"    : "mzu",
+      "mode_temp"    : "\\+25",
+      "IN"      : [15, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [2, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕН0[579].$",
+      "mode_norm"    : "mzu",
+      "mode_temp"    : "\\+25",
+      "IN"      : [25, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [2, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_temp"    : "\\+25",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [2, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[13]|ЕН0[24].)$",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [14, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [2.5, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_temp"    : "\\+25",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [2, "В"]
+    },
+    {
+      "mode_ic": "^1395(?:ЕР0[579]|ЕН(?:0[68]|10).)$",
+      "mode_temp"    : "\\-60|\\+125",
+      "IN"      : [24, "В"],
+      "OUT"     : [null, null],
+      "ADJ/SENS": [null, null],
+      "EN"      : [2.5, "В"]
+    }
+  ]
+} 
+ 
+ 

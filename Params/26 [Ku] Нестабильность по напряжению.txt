@@ -1,0 +1,26 @@
+[TestNumber_{{fIndex}}]
+name={{fName}}
+subname={{fShortName}}
+typeTest={{fTypeTest}}
+activeTest=true
+unit=%/В
+measTime=30
+powerSupplyVoltage={{fIN_V}}
+powerSupplyCurrent=1.000000
+powerSupplyTimeRF=100
+lowSupplyVoltage=0.000000
+lowSupplyCurrent=0.000000
+lowSupplyChannel=0
+loadCurrent={{fOUT_A}}
+minTest={{fLO}}
+maxTest={{fHi}}
+userVar1={{fUserVar1}}
+descUserVar1=Напряжение ИП (2 этап)
+userVar2={{fUserVar2}}
+descUserVar2=Коэффициент дельта
+userVar3=0.000000
+descUserVar3=
+userVar4=0.000000
+descUserVar4=
+userVar5=0.000000
+descUserVar5=

@@ -1,0 +1,66 @@
+{
+  "name": "Опорное напряжение",
+  "units": "В",
+  "short": "Uоп1",
+  "type_test":[5, 5],
+  "diag": true,
+  "ic": "^1395ЕР0[13579]$",
+  "norms": [
+    {
+      "norm_ic": "^1395ЕР0[13579]$",
+      "mzu": [1.232, 1.425],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1395ЕР01$",
+      "IN": [3.3, "В"],
+      "OUT": [-20, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕР03$",
+      "IN": [3.5, "В"],
+      "OUT": [-60, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕР05$",
+      "IN": [3.5, "В"],
+      "OUT": [-0.5, "А"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕР07$",
+      "IN": [3.5, "В"],
+      "OUT": [-1, "А"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1395ЕР09$",
+      "IN": [3.85, "В"],
+      "OUT": [-1, "А"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}

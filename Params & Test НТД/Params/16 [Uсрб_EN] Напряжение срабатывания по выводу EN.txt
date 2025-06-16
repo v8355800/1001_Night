@@ -1,0 +1,26 @@
+[TestNumber_{{fIndex}}]
+name={{fName}}
+subname={{fShortName}}
+typeTest={{fTypeTest}}
+activeTest=false
+unit=В
+measTime=40
+powerSupplyVoltage={{fIN_V}}
+powerSupplyCurrent=0.2
+powerSupplyTimeRF=15
+lowSupplyVoltage=2.000000
+lowSupplyCurrent=10.000000
+lowSupplyChannel=2
+loadCurrent={{fLoadCurrent}}
+minTest={{fLO}}
+maxTest={{fHi}}
+userVar1=0.800000
+descUserVar1=Порог напряжения (мин) 
+userVar2=0.000000
+descUserVar2=
+userVar3=0.000000
+descUserVar3=
+userVar4=0.000000
+descUserVar4=
+userVar5=0.000000
+descUserVar5=
