@@ -1,0 +1,39 @@
+{
+  "name": "Ток потребления",
+  "units": "мА",
+  "short": "Iпот (Icc)",
+  "type_test":[14, 14],
+  "diag": false,
+  "ic": "^1278EH(2.5|3.3)T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EH(2.5|3.3)T$",
+      "mzu": [null, 10],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 11.5],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 12],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 13],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EH(2.5|3.3)T$",
+      "IN": [7, "В"],
+      "OUT": [0, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

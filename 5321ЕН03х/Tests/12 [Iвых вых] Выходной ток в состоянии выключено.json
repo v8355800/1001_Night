@@ -1,0 +1,48 @@
+{
+  "name": "Ток короткого замыкания",
+  "units": "А",
+  "short": "Iкзд",
+  "type_test":[6, 6],
+  "diag": false,
+  "ic": "^5321ЕН03[А-Г][15]А$",
+  "norms": [
+    {
+      "norm_ic": "^5321ЕН03[А-Г][15]А$",
+      "mzu": [null, 0.85],
+      "ceh": {
+        "-60" : [null, 1.08],
+        "+25" : [null, 0.9],
+        "+125": [null, 1.08]
+      },
+      "kontr": {
+        "-60" : [null, 1.14],
+        "+25" : [null, 0.95],
+        "+125": [null, 1.14]
+      },
+      "sdat": {
+        "-60" : [null, 1.2],
+        "+25" : [null, 1],
+        "+125": [null, 1.2]
+      }
+    }
+  ],
+  "powerSupplyCurrent":[
+  	{
+  	  "mode_ic":"^5321ЕН03[А-Г][15]А$",
+  	  "fPowerSupplyCurrent":[0,"мА"]
+  	}
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^5321ЕН03[А-Г][15]А$",
+      "mode_norm": "mzu|ceh",   
+      "IN"      : [26, "В"],
+      "OUT"     : [0, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    }
+
+  ]
+}
+ 

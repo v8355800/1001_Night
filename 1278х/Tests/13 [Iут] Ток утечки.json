@@ -1,0 +1,40 @@
+{
+  "name": "Ток утечки",
+  "units": "мкА",
+  "short": "Iут",
+  "type_test":[14, 14],
+  "diag": false,
+  "ic": "^1278ЕН(2.5|3.3)Т$",
+  "norms": [
+    {
+      "norm_ic": "^1278ЕН(2.5|3.3)Т$",
+      "mzu": [null, 800],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 800],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278ЕН(2.5|3.3)Т$",
+      "mode_norm": "mzu|ceh",
+      "IN": [0.5, "В"],
+      "OUT": [null, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

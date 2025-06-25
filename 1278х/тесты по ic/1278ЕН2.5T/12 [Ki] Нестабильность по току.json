@@ -1,0 +1,94 @@
+{
+  "name": "Нестабильность по току",
+  "units": "мВ",
+  "short": "Ki",
+  "type_test":[16, 16],
+  "diag": false,
+  "ic": "^1278Е[РН](1|2.5|3.3)Т$$",
+  "norms": [
+    {
+      "norm_ic": "^1278EP1T$",
+      "mzu": [null, 5.43],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 6.02],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 6.07],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 6.22],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1278EH2.5T$",
+      "mzu": [null, 10.86],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 12.05],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 12.15],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 12.44],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1278EH3.3T$",
+      "mzu": [null, 14.5],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 16.1],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 16.24],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 16.6],
+        "+125": [null, null]
+      }
+    }
+
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EP1T$",
+      "dI": [790, "мА"],
+      "IN": [2.75, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1278EH2.5T$",
+      "dI": [790, "мА"],
+      "IN": [4, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },  
+    {
+      "mode_ic": "^1278EH3.3T$",
+      "dI": [790, "мА"],
+      "IN": [4.8, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}

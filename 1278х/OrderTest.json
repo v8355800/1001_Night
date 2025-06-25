@@ -1,0 +1,10 @@
+{
+	"norm":
+	[
+		{
+			"ic":"^1278Е[РН](1|2.5|3.3)Т$",
+			"norm_type":"mzu|ceh|kontr|sdat",
+			"order_test":[]
+		}
+	]
+}

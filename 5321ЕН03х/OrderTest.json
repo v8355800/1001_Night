@@ -1,0 +1,10 @@
+{
+	"norm":
+	[
+		{
+			"ic":"^5321ЕН03[А-Г][145](?:А)?$",
+			"norm_type":"mzu|ceh|kontr|sdat",
+			"order_test":[]
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Ток контактирования",
+  "units": "мА",
+  "short": "Ikz",
+  "type_test":[1, 1],
+  "diag": false,
+  "ic": "^1278Е[РН](1|2.5|3.3)Т$",
+  "norms": [
+    {
+      "norm_ic": "^1278Е[РН](1|2.5|3.3)Т$",
+      "mzu": [-0.1, 5.0],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278Е[РН](1|2.5|3.3)Т$",
+      "IN": [1.0, "В"],
+      "OUT": [null, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

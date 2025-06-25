@@ -1,0 +1,39 @@
+{
+  "name": "Выходной ток по выводу регулирования",
+  "units": "мкА",
+  "short": "Iрег (IADJ)",
+  "type_test":[14, 14],
+  "diag": false,
+  "ic": "^1278EP1T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EP1T$",
+      "mzu": [null, 100],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 105],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 110],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 120],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EP1T$",
+      "IN": [4.25, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

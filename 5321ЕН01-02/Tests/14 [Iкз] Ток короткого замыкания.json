@@ -1,0 +1,64 @@
+{
+  "name": "Ток короткого замыкания",
+  "units": "мА",
+  "short": "Iкз",
+  "type_test":[14, 14],
+  "diag": false,
+  "ic": "^5321ЕН0[12][А-Д][145](?:А)?$",
+  "norms": [
+    {
+      "norm_ic": "^5321ЕН01[А-Г][145]$",
+      "mzu": [null, 85],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 90],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 95],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 100],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН02[А-Д][145](?:А)?$",
+      "mzu": [null, 425],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 450],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 475],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 500],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "powerSupplyCurrent":[
+    {
+      "mode_ic":"^5321ЕН0[12][А-Д][145](?:А)?$",
+      "fPowerSupplyCurrent":[500,"мА"]
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^5321ЕН0[12][А-Д][145](?:А)?$",
+      "IN": [35, "В"],
+      "OUT": [5, "мА"], 
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

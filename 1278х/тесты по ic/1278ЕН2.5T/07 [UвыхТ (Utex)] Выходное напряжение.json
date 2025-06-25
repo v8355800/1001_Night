@@ -1,0 +1,65 @@
+{
+  "name": "Выходное напряжение",
+  "short": "Uвыхт (Utex)",
+  "type_test":[5, 5],
+  "diag": false,
+  "ic": "^1278EH(2.5|3.3)T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EH2.5T$",
+      "mzu": [2.435, 2.565],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+     {
+      "norm_ic": "^1278EH3.3T$",
+      "mzu": [3.217, 3.383],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EH2.5T$",
+      "mode_norm": "mzu",
+      "IN": [4, "В"],
+      "OUT": [1150, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    },
+    {
+      "mode_ic": "^1278EH3.3T$",
+      "mode_norm": "mzu",
+      "IN": [4.8, "В"],
+      "OUT": [1150, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ] 
+}

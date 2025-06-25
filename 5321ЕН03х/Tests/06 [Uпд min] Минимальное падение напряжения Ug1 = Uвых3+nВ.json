@@ -1,0 +1,57 @@
+{
+  "name": "Минимальное падение напряжения",
+  "units": "В",
+  "short": "Uпд min",
+  "type_test":[6, 6],
+  "diag": false,
+  "ic": "^5321ЕН03[А-Г][145](?:А)?$",
+  "norms": [
+    {
+      "norm_ic": "^5321ЕН03[А-Г][145](?:А)?$",
+      "mzu": [null, 0.91],
+      "ceh": {
+        "-60" : [null, 2.3],
+        "+25" : [null, 0.94],
+        "+125": [null, 2.3]
+      },
+      "kontr": {
+        "-60" : [null, 2.4],
+        "+25" : [null, 0.97],
+        "+125": [null, 2.4]
+      },
+      "sdat": {
+        "-60" : [null, 2.5],
+        "+25" : [null, 1],
+        "+125": [null, 2.5]
+      }
+    }
+  ],
+  "powerSupplyCurrent":[
+  	{
+  	  "mode_ic":"^5321ЕН03[А-Г][145](?:А)?$",
+  	  "fPowerSupplyCurrent":[0,"мА"]
+  	}
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^5321ЕН03[А-Г][145](?:А)?$",
+      "mode_norm": "mzu|ceh|sdat|kontr",  
+      "mode_temp"    : "^(?:\\+25)$",
+      "IN"      : [0.7, "В"],
+      "OUT"     : [500, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    },
+    {
+      "mode_ic": "^5321ЕН03[А-Г][145](?:А)?$",
+      "mode_norm": "ceh|sdat|kontr",  
+      "mode_temp"    : "^(?:\\-60|\\+125)$",
+      "IN"      : [2, "В"],
+      "OUT"     : [500, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    }
+  ]
+}
+ 

@@ -1,0 +1,40 @@
+{
+  "name": "Контроль тока ограничения при оценке срабатывания тепловой защиты",
+  "units": "А",
+  "short": "Iогр (Ios2)",
+  "type_test":[14, 14],
+  "diag": true,
+  "ic": "^1278EH(1|2.5|3.5)T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EH(1|2.5|3.5)T$",
+      "mzu": [null, null],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 1],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EH(1|2.5|3.5)T$",
+      "mode_norm": "ceh",
+      "IN": [7, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

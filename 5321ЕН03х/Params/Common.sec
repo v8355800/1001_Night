@@ -1,0 +1,5 @@
+[Common]
+pauseBetweenTests=0
+ciclePause=500
+temperature={{fTemp}}
+testPlanDescriptionText={{fIC}} {{fClass}} {{fTemp}} {{fUFP}}

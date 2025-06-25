@@ -1,0 +1,38 @@
+{
+  "name": "Опорное напряжение",
+  "short": "Uref",
+  "type_test":[2, 2],
+  "diag": false,
+  "ic": "^1278EP1T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EP1T$",
+      "mzu": [1.1, 1.266],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EP1T$",
+      "mode_norm": "mzu",
+      "IN": [2.75, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Тест разогрева, контроль опорного напряжения",
+  "units": "В",
+  "short": "Uоп7 (Ure7)",
+  "type_test":[5, 5],
+  "diag": true,
+  "ic": "^1278EP1T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EP1T$",
+      "mzu": [null, null],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 1.269],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^1278EP1T$",
+      "mode_norm": "ceh",
+      "IN": [7, "В"],
+      "OUT": [900, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}

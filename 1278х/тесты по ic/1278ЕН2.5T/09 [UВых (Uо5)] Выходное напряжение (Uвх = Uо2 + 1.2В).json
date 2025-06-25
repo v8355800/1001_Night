@@ -1,0 +1,56 @@
+{
+  "name": "Выходное напряжение",
+  "short": "UВых (Uо5)",
+  "type_test":[5, 5],
+  "diag": false,
+  "ic": "^1278EH2.5T|1278EH3.3T$",
+  "norms": [
+    {
+      "norm_ic": "^1278EH2.5T$",
+      "mzu": [2.175, 2.525],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1278EH3.3T$",
+      "mzu": [2.95, 3.35],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278EH2.5T|1278EH3.3T$",
+      "IN": [null, "В"],
+      "OUT": [800, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}

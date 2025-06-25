@@ -1,0 +1,105 @@
+{
+  "name": "Выходное напряжение",
+  "units": "В",
+  "short": "Uвых0",
+  "type_test":[1, 1],
+  "diag": false,
+  "ic": "^5321ЕН03[А-Г][145](?:А)?$",
+  "norms": [
+    {
+      "norm_ic": "^5321ЕН03А(?:..|.)$",
+      "mzu": [2.3, 2.7],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [2.16, 2.86],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН03Б(?:..|.)$",
+      "mzu": [3.036, 3.564],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [2.85, 3.77],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН03В(?:..|.)$",
+      "mzu": [4.6, 5.4],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [4.3, 5.71],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+     {
+      "norm_ic": "^5321ЕН03Г(?:..|.)$",
+      "mzu": [11.04, 12.96],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [10.37, 13.73],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "powerSupplyCurrent":[
+  	{
+  	  "mode_ic":"^5321ЕН03[А-Г][145](?:А)?$",
+  	  "fPowerSupplyCurrent":[500,"мА"]
+  	}
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^5321ЕН03[А-Г][145](?:А)?$",
+      "mode_norm": "mzu|ceh",   
+      "IN"      : [30, "В"],
+      "OUT"     : [1, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    }
+
+  ]
+}
+ 

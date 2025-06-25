@@ -1,0 +1,199 @@
+{
+  "name": "Выходное напряжение",
+  "units": "В",
+  "short": "Uвых0",
+  "type_test":[1, 1],
+  "diag": false,
+  "ic": "^5321ЕН0[12][А-Д][145](?:А)?$",
+  "norms": [
+    {
+      "norm_ic": "^5321ЕН01А[145]$",
+      "mzu": [4.6, 5.4],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [4.6, 5.56],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН01Б[145]$",
+      "mzu": [5.5, 6.5],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [5.33, 6.7],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН01В[145]$",
+      "mzu": [8.28, 9.72],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [8, 10],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН01Г[145]$",
+      "mzu": [11.04, 12.96],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [10.7, 13.3],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН02А(?:[15]|4А)$",
+      "mzu": [4.6, 5.4],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [4.46, 5.56],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН02Б(?:[15]|4А)$",
+      "mzu": [7.36, 8.64],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [7.13, 8.9],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН02В(?:[15]|4А)$",
+      "mzu": [8.28, 9.72],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [8, 10],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН02Г(?:[15]|4А)$",
+      "mzu": [11.04, 12.96],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [10.7, 13.3],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^5321ЕН02Д(?:[15]|4А)$",
+      "mzu": [16.56, 19.44],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [16, 20],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+    
+  ],
+    "powerSupplyCurrent":[
+  	{
+  	  "mode_ic":"^5321ЕН0[12][А-Д][145](?:А)?$",
+  	  "fPowerSupplyCurrent":[500,"мА"]
+  	}
+  ],
+  "modes": [
+    {
+      "mode_ic": "^5321ЕН0[12][А-Д][145](?:А)?$",
+      "mode_norm": "mzu|ceh",
+      "IN": [35, "В"],
+      "OUT": [5, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
+ 

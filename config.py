@@ -1,4 +1,6 @@
 CONFIG = {
+    'ic':'1395х',
+    
     'param_folder': 'Params',
     'test_folder': 'Tests',
     'common_file': 'Common.sec',
@@ -11,7 +13,7 @@ CONFIG = {
         'Контрольные': 'kontr',
         'Сдаточные': 'sdat'
     },
-    'number_diagnostic_test': [6,7,8,10,11,12,14,16,18,22,24],
     'temperatures': {'-60', '+25', '+125'},
-    'cipher_folder':'Сipher'
+    'cipher_folder':'Сipher',
+    'order_test':'OrderTest'
 }

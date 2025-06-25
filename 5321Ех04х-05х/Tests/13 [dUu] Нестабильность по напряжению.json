@@ -1,0 +1,75 @@
+{
+  "name": "Нестабильность по напряжению",
+  "units": "мВ",
+  "short": "dUu",
+  "type_test":[7, 7],
+  "diag": false,
+  "ic": "^5321Е[НР]0[45](?:[АБВГ]|[15])(?:..|.)$",
+  "norms": [
+    {
+      "norm_ic": "^5321Е[НР]0[45](?:[АБВГ]|[15])(?:..|.)$",
+      "mzu": [null, 7],
+      "ceh": {
+        "-60" : [null, 48],
+        "+25" : [null, 8],
+        "+125": [null, 48]
+      },
+      "kontr": {
+        "-60" : [null, 54],
+        "+25" : [null, 9],
+        "+125": [null, 54]
+      },
+      "sdat": {
+        "-60" : [null, 60],
+        "+25" : [null, 10],
+        "+125": [null, 60]
+      }
+    }
+  ],
+  "powerSupplyCurrent":[
+  	{
+  	  "mode_ic":"^5321Е[НР]0[45](?:[АБВГ]|[15])(?:..|.)$",
+  	  "fPowerSupplyCurrent":[0,"мА"]
+  	}
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^5321Е[НР]0[45](?:[15А])(?:..|.)$",
+      "mode_norm": "mzu|ceh|sdat|kontr",  
+      "dU"		: [17.8, "В"],		
+      "IN"      : [2.2, "В"],
+      "OUT"     : [1, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    },
+     {
+      "mode_ic": "^5321ЕН0[45][Б](?:.|..)$",
+      "mode_norm": "mzu|ceh|sdat|kontr",  
+      "dU"		: [17.7, "В"],		
+      "IN"      : [2.3, "В"],
+      "OUT"     : [1, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    },
+     {
+      "mode_ic": "^5321ЕН0[45][В](?:.|..)$",
+      "mode_norm": "mzu|ceh|sdat|kontr",  
+      "dU"		: [17.0, "В"],		
+      "IN"      : [3.0, "В"],
+      "OUT"     : [1, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    },
+     {
+      "mode_ic": "^5321ЕН0[45][Г](?:.|..)$",
+      "mode_norm": "mzu|ceh|sdat|kontr",  
+      "dU"		: [16.2, "В"],		
+      "IN"      : [3.8, "В"],
+      "OUT"     : [1, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN"      : [null, null]
+    }
+  ]
+}
+ 

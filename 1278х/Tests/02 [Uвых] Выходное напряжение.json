@@ -1,0 +1,39 @@
+{
+  "name": "Выходное напряжение",
+  "units": "В",
+  "short": "Uвых",
+  "type_test":[2, 2],
+  "diag": false,
+  "ic": "^1278ЕН3.3Т$",
+  "norms": [
+    {
+      "norm_ic": "^1278ЕН3.3Т$",
+      "mzu": [2.865, 3,35],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, null],
+        "+125": [null, null]
+      }
+    }
+  ],
+  "modes": [
+    {
+      "mode_ic": "^1278ЕН3.3Т$",
+      "mode_norm": "mzu",
+      "IN": [6, "В"],
+      "OUT": [10, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}

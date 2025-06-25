@@ -1,0 +1,116 @@
+{
+  "name": "Нестабильность по току",
+  "units": "мВ",
+  "short": "Ki",
+  "type_test":[81, 81],
+  "diag": false,
+  "ic": "^1158ЕН([59]|3.3|12|15)[ВГ][ХТ]?$",
+  "norms": [
+    {
+      "norm_ic": "^1158ЕН5[ВГ][ХТ]?$",
+      "mzu": [null, 32],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 36],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 38],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 40],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1158ЕН3.3[ВГ][ХТ]?$",
+      "mzu": [null, 21],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 24],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 25],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 26],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1158ЕН9[ВГ][ХТ]?$",
+      "mzu": [null, 58],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 65],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 69],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 72],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1158ЕН12[ВГ][ХТ]?$",
+      "mzu": [null, 77],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 86],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 91],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 95],
+        "+125": [null, null]
+      }
+    },
+    {
+      "norm_ic": "^1158ЕН15[ВГ][ХТ]?$",
+      "mzu": [null, 96],
+      "ceh": {
+        "-60" : [null, null],
+        "+25" : [null, 108],
+        "+125": [null, null]
+      },
+      "kontr": {
+        "-60" : [null, null],
+        "+25" : [null, 114],
+        "+125": [null, null]
+      },
+      "sdat": {
+        "-60" : [null, null],
+        "+25" : [null, 119],
+        "+125": [null, null]
+      }
+    }     
+  ],
+
+  "modes": [
+    {
+      "mode_ic": "^1158ЕН([59]|3.3|12|15)[ВГ][ХТ]?$",
+      "dI": [500, "мА"],
+      "IN": [14, "В"],
+      "OUT": [5, "мА"],
+      "ADJ/SENS": [null, null],
+      "EN": [0, "В"]
+    }
+  ]
+}
