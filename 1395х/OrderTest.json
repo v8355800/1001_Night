@@ -4,6 +4,7 @@
 		{
 			"ic":"^1395Е[РН]\\d{2}[АБВГДЕЖИК]?$",
 			"norm_type":"mzu|ceh|kontr|sdat",
+			"dotn_use_norm_type":"",
 			"order_test":["1-19", 26, 27, "20-25", 28]
 		}
 	]

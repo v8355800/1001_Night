@@ -4,6 +4,7 @@
 		{
 			"ic":"^5321ЕН03[А-Г][145](?:А)?$",
 			"norm_type":"mzu|ceh|kontr|sdat",
+			"dotn_use_norm_type":"",
 			"order_test":[]
 		}
 	]

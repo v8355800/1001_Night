@@ -268,20 +268,23 @@ def find_ufp_by_code_and_temp(csv_file, target_code, target_temp):
     with open(csv_file, encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=';')
 
-        for row in reader:
-            code, temp, ufp = row
+        try:
+            for row in reader:
+                code, temp, ufp = row
 
-            code = clean_string(code)
-            temp = clean_string(temp)
-            ufp = clean_string(ufp)
+                code = clean_string(code)
+                temp = clean_string(temp)
+                ufp = clean_string(ufp)
 
-            # Игнорируем пустые коды
-            if not code.strip():
-                continue
+                # Игнорируем пустые коды
+                if not code.strip():
+                    continue
 
-            # Сравниваем без учёта регистра
-            if target_code.lower() in code.lower() and target_temp.lower() in temp.lower():
-                return ufp
+                # Сравниваем без учёта регистра
+                if target_code.lower() in code.lower() and target_temp.lower() in temp.lower():
+                    return ufp
+        except StopIteration:
+            return None
 
     return None
 
@@ -321,6 +324,20 @@ def sorted_order_test(orders_test, sorted_files):
     result = [indexed_list[num] for num in expanded_order]
     return result
 
+def check_norm_type(data, norm_type):
+
+    for item in data["norm"]:
+        norm_type_options = item["norm_type"]
+        norm_type2 =item["dotn_use_norm_type"]
+
+        if matches_ic_pattern(norm_type, norm_type_options):
+            return True
+        
+        if matches_ic_pattern(norm_type, norm_type2):
+            return True
+
+    return False  
+
 def get_result_order_test(data, ic, norm_type):
     # Результат
     result = None
@@ -354,6 +371,12 @@ def main():
             for norm_name in CONFIG['norm_texts']:
                 norm = CONFIG['norm_mapping'][norm_name]
 
+                if check_norm_type(orders, norm) == False:
+                    continue # пропускаем если нет нужного norm_type
+
+                if check_norm_type(orders, norm_name) == True:
+                    continue # пропускаем если нет нужного norm_type
+                
                 if (norm == 'mzu' or norm_name=='2 Классификация') and temp != '+25':
                     continue # для mzu обрабатываем только +25
 

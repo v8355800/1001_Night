@@ -1,5 +1,5 @@
 CONFIG = {
-    'ic':'1395х',
+    'ic':'1158ЕНх',
     
     'param_folder': 'Params',
     'test_folder': 'Tests',

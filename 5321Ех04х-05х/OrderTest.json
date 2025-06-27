@@ -4,6 +4,7 @@
 		{
 			"ic":"^5321Е[НР]0[45](?:[АБВГ]|[15])(?:..|.)$",
 			"norm_type":"mzu|ceh|kontr|sdat",
+			"dotn_use_norm_type":"",
 			"order_test":[]
 		}
 	]
