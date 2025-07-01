@@ -29,7 +29,7 @@
   "powerSupplyCurrent":[
   	{
   	  "mode_ic":"^5321Е[НР]0[45](?:[АБВГ]|[15])(?:..|.)$",
-  	  "fPowerSupplyCurrent":[0,"мА"]
+  	  "fPowerSupplyCurrent":[6000,"мА"]
   	}
   ],
 

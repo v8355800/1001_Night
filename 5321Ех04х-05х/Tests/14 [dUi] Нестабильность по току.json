@@ -37,8 +37,8 @@
     {
       "mode_ic": "^5321Е[НР]0[45](?:[15А])(?:..|.)$",
       "mode_norm": "mzu|ceh|sdat|kontr",  
-      "dU"		: [1.495, "В"],		
-      "IN"      : [2.2, "В"],
+      "dI"		: [1.495, "В"],		
+      "IN"      : [2.5, "В"],
       "OUT"     : [5, "мА"],
       "ADJ/SENS": [null, null],
       "EN"      : [null, null]
@@ -46,7 +46,7 @@
      {
       "mode_ic": "^5321ЕН0[45][Б](?:.|..)$",
       "mode_norm": "mzu|ceh|sdat|kontr",  
-      "dU"		: [1.495, "В"],		
+      "dI"		: [1.495, "В"],		
       "IN"      : [2.8, "В"],
       "OUT"     : [5, "мА"],
       "ADJ/SENS": [null, null],
@@ -55,7 +55,7 @@
      {
       "mode_ic": "^5321ЕН0[45][В](?:.|..)$",
       "mode_norm": "mzu|ceh|sdat|kontr",  
-      "dU"		: [1.495, "В"],		
+      "dI"		: [1.495, "В"],		
       "IN"      : [3.5, "В"],
       "OUT"     : [5, "мА"],
       "ADJ/SENS": [null, null],
@@ -64,7 +64,7 @@
      {
       "mode_ic": "^5321ЕН0[45][Г](?:.|..)$",
       "mode_norm": "mzu|ceh|sdat|kontr",  
-      "dU"		: [1.495, "В"],		
+      "dI"		: [1.495, "В"],		
       "IN"      : [4.3, "В"],
       "OUT"     : [5, "мА"],
       "ADJ/SENS": [null, null],
